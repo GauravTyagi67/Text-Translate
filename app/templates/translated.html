@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Text Translate</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container-fluid">
+    <a class="navbar-brand" href="">Text Translate</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      	<span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      	<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        	<li class="nav-item">
+          		<a class="nav-link text-white" aria-current="page" href="{% url 'home' %}">Home</a>
+        	</li>
+      	</ul>
+    </div>
+ </div>
+</nav>
+<br><br>
+<div class="container">
+	
+<center><h1>Text Successfully Translated <font color="#dc143c">{{ u_lang }}</font> into<font color="#dc143c">{{t_lang}}</font></h1></center>
+<hr>
+<center>
+	<font color="purple"></font>
+	<h3>
+		{{translated}}
+	</h3>
+	</font>
+</center>
+<hr><!-- 
+<br><br>
+<div class="form-group">
+  <center><label for="exampleFormControlTextarea1"><b><h3>Enter your text in any language</h3></b></label></center>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"name="Text2"></textarea>
+</div> -->
+  
+</div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
